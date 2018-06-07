@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Change Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+  <body>
+    <h1>Change Calculator</h1>
+    <!-- Write your markup here -->
+    <div class="row">
+      <div class="col l12 m6">
+        <div class="card teal lighten-2">
+          <div class="card-content white-text">
+            <span class="card-title">Change calculator</span>
+            <input id="amount-received" type="text" placeholder="How much has the customer given you." />
+            <input id="amount-due" type="text" placeholder="How much is due for the sale?" />
+            <button style = "text-align: center; display: block; margin: 0 auto;" class = "waves-effect waves-light btn center-align" id="calculate-change" onclick="calculateChange()">Calculate</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <ul class="collection">
+      <li id = "dollars-output" class="collection-item">Dollars:  <a style = "text-align: right;" class="waves-effect waves-teal btn-flat">Button</a></li>
+      <li id = "quarters-output" class="collection-item">Quaters: </li>
+      <li id = "dimes-output" class="collection-item">Dimes: </li>
+      <li id = "nickels-output"class="collection-item">Nickles: </li>
+      <li id = "pennies-output" class="collection-item">Pennies: </li>
+    </ul>
+
+    <!-- Don't forget to add your <script> tag here -->
+      <script src="style.css" charset="utf-8"></script>
+      <script src="main.js" charset="utf-8"></script>
+  </body>
+</html>
